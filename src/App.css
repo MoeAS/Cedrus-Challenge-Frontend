@@ -1,0 +1,143 @@
+:root {
+  --secondaryBack: #222732;
+  --primaryBack: #191d24;
+  --ourYellow: #f3c317;
+  --ourLightRed: #ff0000;
+  --ourGreen: #1a8926;
+  --ourRed: #891a1a;
+  --ourPink: #bf24c2;
+  --ourGrey: #808080;
+  --ourWhite: #ffffff;
+  font-family: "Arial Black";
+}
+
+body {
+  background-color: var(--ourSilver);
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--primaryBack);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--secondaryBack);
+}
+
+html {
+	overflowY: 'scroll';
+}
+
+.over {
+	overflow: hidden;
+}
+
+.navbar {
+  height: 100vh;
+  width: 5rem;
+  background-color: #808080;
+}
+
+.navbar-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.last {
+  margin-top: auto;
+}
+
+.navbar-icon:hover {
+  transition: 600ms;
+  color: var(--ourWhite);
+}
+
+.tabs {
+  margin-top: 10vh;
+  margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+  height: 430px;
+  font-family: sans-serif;
+  background-color: var(--ourSilver);
+}
+
+.tabs__label {
+  color: white;
+  font-family: "Arial";
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  margin-top: 3vh;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tabs__content::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.tabs__content::-webkit-scrollbar-thumb {
+  background: var(--ourYellow);
+}
+.tabs__content::-webkit-scrollbar-track {
+  background: var(--ourYellow);
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  background-color: var(--primaryBack);
+  border: var(--secondaryBack) solid 1px;
+  border-radius: 13px;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}
+
+
+
+
+.wrapper {
+  font-family: Arial;
+  margin-top: 50px;
+  width: 30vw;
+  background-color: var(--ourGrey);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox{
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-center{
+	width:300px;
+	height:250px;
+	display: flex;
+	Justify-Content: center;
+	margin-left: 530px;
+}
+
+.create-pg{
+	margin-left: 30px;
+}
