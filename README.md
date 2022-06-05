@@ -2,6 +2,37 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# To Run the app
+
+On terminal/cmd:
+
+1) cd to the project folder
+
+ ```
+C:\Users\Mohammed>cd Desktop\react-frontend
+ 
+C:\Users\Mohammed\Desktop\react-frontend>
+ 
+ ```
+
+2) run 'npm install'
+
+```
+C:\Users\Mohammed\Desktop\react-frontend> npm install
+```
+
+3) run 'npm start'
+
+```
+C:\Users\Mohammed\Desktop\react-frontend> npm start
+```
+
+# Things I would fix:
+
+1) Carousel bug where it resets items
+2) Display the intended book when pressing "Edit" button, by passing parameter of the book id to the /EditBook page (tried but no luck yet :(  )
+3) Display the book in the frontend homepage by mapping them and iterating to display under the carousel
+
 ## Available Scripts
 
 In the project directory, you can run:
