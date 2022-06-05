@@ -170,7 +170,11 @@ function Home() {
 			infinite
 			autoPlayInterval = {2000}
           />
-
+		  
+		  {local !== null ? (
+		  <h3 className="welcome"> Welcome, {local}! </h3>
+		  ) : (undefined)}
+		  
           <div className="tabs">
             <input
               type="radio"
