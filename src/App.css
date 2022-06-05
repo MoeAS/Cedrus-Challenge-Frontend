@@ -141,3 +141,8 @@ html {
 .create-pg{
 	margin-left: 30px;
 }
+
+.welcome{
+	display: flex;
+    margin-left: 30px;
+}
