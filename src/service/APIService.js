@@ -14,7 +14,7 @@ class APIService {
     }
 	
 	getBook(id){
-        return fetch(`http://localhost:8080/readbooks/${id}`,{ 
+        return fetch(`http://localhost:8080/readbook/${id}`,{ 
             method: 'GET',
 			
                 headers: {

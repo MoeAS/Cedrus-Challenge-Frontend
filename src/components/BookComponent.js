@@ -82,7 +82,7 @@ export default class BookComponent extends React.Component {
                                         <td>{book.rating}</td>
 										<td> 
 											<ButtonGroup>
-												<Button size="sm" color="primary" value={book.name} tag={Link} to={"/EditBook/"} state={book.id}>Edit</Button>
+												<Button size="sm" color="primary" value={[book.id, book.name]} onClick={(e) => {{localStorage.setItem("book_id", e.target.value); window.location.href='/EditBook';}}}>Edit</Button>
 												<Button size="sm" color="danger" value={book.name} onClick={(e) => {
 													console.log(e.target.value);
 													APIService.deleteBook(e.target.value);

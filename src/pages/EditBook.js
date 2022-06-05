@@ -41,11 +41,20 @@ function EditBook(props) {
 	function Gotobooks() {
     navigate("/MyBooks", { replace: true });
   }
-	const [rating, setRating] = useState(0);
-	const [bookname, setBookname] = useState("");
+  
 	
-	const location = useLocation();
-	console.log(location.data)
+	const [rating, setRating] = useState(0);
+	const [bookname, setBookname] = useState(localStorage.getItem('book_id').split(',').pop());
+	const [data, setData] = useState([]);
+	
+	
+	//APIService.getBook(localStorage.getItem('book_id')[0]).then((data) => {
+            //setBookname(data[0].name)
+			//setRating(data[0].rating)
+            //console.log(data[0].name)
+			//console.log(data[0].rating)
+          //})
+	
 	
 	const handleRating = (rate) => {
 	setRating(rate/20)
@@ -59,6 +68,7 @@ function EditBook(props) {
 		<h2> Edit Book </h2>
 		<br />
           <TextField
+			disabled
             color="primary"
             label="Book Name"
             type="text"
@@ -71,7 +81,7 @@ function EditBook(props) {
         <div>
           <Rating 
 		  onClick={handleRating} 
-		  initialValue={0}
+		  initialValue={rating}
 		  ratingValue={rating}
 		  allowHover
 		  transition

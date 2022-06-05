@@ -34,7 +34,6 @@ function Home() {
   }
   
   const AnImage = require("../shop.png");
-  const AnotherIm = require("../batata.png");
   
   function logout() {
     localStorage.clear();
